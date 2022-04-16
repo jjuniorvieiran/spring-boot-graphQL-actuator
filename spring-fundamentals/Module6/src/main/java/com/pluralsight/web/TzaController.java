@@ -20,8 +20,8 @@ import org.springframework.web.server.ResponseStatusException;
 import java.util.List;
 import java.util.Optional;
 
-@RestController
-@RequestMapping("/tza")
+@RestController         //spring mvc annotations - Add @Controller and @ResponseBody annotations - This not working with Thymeleaf because do not return models
+@RequestMapping("/tza") //spring mvc annotations
 public class TzaController {
     private ApplicationService applicationService;
     private TicketService ticketService;
