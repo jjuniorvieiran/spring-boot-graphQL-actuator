@@ -8,7 +8,7 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-public class ApplicationNotFoundException extends RuntimeException implements GraphQLError {
+public class ApplicationNotFoundException extends RuntimeException implements GraphQLError { //handling errors in GraphQl
 
     private Map<String, Object> extensions = new HashMap<>();
 
