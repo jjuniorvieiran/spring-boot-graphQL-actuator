@@ -52,6 +52,7 @@
 			<version>5.0.2</version>
 		</dependency>
 
+<!--	GraphQL dependencies	-->
 		<dependency>
 			<groupId>com.graphql-java</groupId>
 			<artifactId>graphql-java-tools</artifactId>
