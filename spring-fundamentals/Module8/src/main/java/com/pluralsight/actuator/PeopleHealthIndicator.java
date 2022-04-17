@@ -4,6 +4,8 @@ import org.springframework.boot.actuate.health.Health;
 import org.springframework.boot.actuate.health.HealthIndicator;
 import org.springframework.stereotype.Component;
 
+// Steps to create a custom metrics
+
 @Component
 public class PeopleHealthIndicator implements HealthIndicator {
     private final String message_key = "PeopleService";
