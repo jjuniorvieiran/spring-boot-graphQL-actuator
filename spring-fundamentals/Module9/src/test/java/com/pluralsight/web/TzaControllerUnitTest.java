@@ -26,11 +26,12 @@ import static org.springframework.test.web.servlet.request.MockMvcRequestBuilder
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.content;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.status;
 
-@RunWith(SpringRunner.class)
-@WebMvcTest(TzaController.class)
+@RunWith(SpringRunner.class) //define runner class
+@WebMvcTest(TzaController.class) // controller which I want to test
 public class TzaControllerUnitTest {
+
     @Autowired
-    private MockMvc mockMvc;
+    private MockMvc mockMvc; // this is used to mock a http server calls
 
     @MockBean
     ApplicationService applicationService;
